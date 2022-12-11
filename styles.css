@@ -1,0 +1,143 @@
+/* @import url("Https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,700"); */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);  */
+
+    /* background-color: #FBDA61;
+    background-image: linear-gradient(225deg, #FBDA61 0%, #FF5ACD 100%); */
+
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);  
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fafafa;
+}
+
+img{
+    width: 200px;
+    transition: all 300ms ease-in-out;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+.intro{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.description{
+    font-size: 25px;
+    margin: 1.5rem 0;
+    font-weight: 400;
+}
+
+hr{
+    width: 30%;
+    margin: 1.5rem auto;
+    border: 1px solid #fafafa;
+}
+
+.links{
+    margin: 30px auto;
+}
+
+.links a{
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 1px solid #fafafa;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 20px;
+    text-transform:uppercase ;
+    transition: all 400ms ease-in-out;
+}
+
+.links a:hover{
+    background-color: #fafafa;
+    color: gray;
+}
+
+/* ICONS */
+.wrapper{
+    display: inline-flex;
+    margin-top: 50px;
+    list-style: none;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 30px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+
+.icon a{
+    color: #fafafa;
+}
+
+.icon a:visited{
+    color: #fafafa;
+}
+.tooltip{
+    position: absolute;
+    display: block;
+    text-align: center;
+    top: 0;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+    height: 15px;
+    width: 53px;
+
+}
+
+.icon:hover .tooltip{
+    opacity: 1;
+    top: -40px;
+}
+
+.facebook:hover,.facebook:hover > .tooltip{
+    background-color: #3b5998;
+}
+
+.twitter:hover,.twitter:hover > .tooltip{
+    background-color: #1da1f2;
+}
+
+.instagram:hover,.instagram:hover > .tooltip{
+    background-color: #e4405f;
+}
+
+.github:hover,.github:hover > .tooltip{
+    background-color: #333;
+}
