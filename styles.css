@@ -140,3 +140,9 @@ hr{
 .github:hover,.github:hover > .tooltip{
     background-color: #333;
 }
+
+@media(max-width:536px){
+    .links a{
+        margin: 0 2px;
+    }
+}
